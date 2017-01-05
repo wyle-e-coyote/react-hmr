@@ -1,2 +1,12 @@
-let docBody = "Webpack is doing its thing, with ES2015!";
-document.write(docBody);
+import { render } from "react-dom";
+import React from "react";
+import App from "./components/App";
+
+document.addEventListener("DOMContentLoaded", () => {
+    const containerEl = document.getElementById("container");
+
+render(
+    <App />,
+    containerEl
+);
+});
